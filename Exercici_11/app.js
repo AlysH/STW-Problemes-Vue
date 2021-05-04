@@ -8,9 +8,9 @@ const wordsToList = {
             separatedWords: this.words.split(' ')
         }
     },
-    props: {
-        words: String
-    },
+    props: [
+        'words'
+    ],
     template: `<div>
         <ul>
             <li v-for="word in separatedWords">{{ word }}</li>
