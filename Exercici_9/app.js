@@ -30,17 +30,44 @@ const options = {
     watch: {
         state: function () {
             if (this.state == 0) {
-                this.redShade = { height: '30px', backgroundColor: 'indianRed' };
-                this.yellowShade = { height: '30px', backgroundColor: 'khaki' };
-                this.greenShade = { height: '30px', backgroundColor: 'lawngreen' };
+                this.redShade = {
+                    height: '30px',
+                    backgroundColor: 'indianRed'
+                };
+                this.yellowShade = {
+                    height: '30px',
+                    backgroundColor: 'khaki'
+                };
+                this.greenShade = {
+                    height: '30px',
+                    backgroundColor: 'lawngreen'
+                };
             } else if (this.state == 1) {
-                this.redShade = { height: '30px', backgroundColor: 'indianRed' };
-                this.yellowShade = { height: '30px', backgroundColor: 'yellow' };
-                this.greenShade = { height: '30px', backgroundColor: 'seagreen' };
+                this.redShade = {
+                    height: '30px',
+                    backgroundColor: 'indianRed'
+                };
+                this.yellowShade = {
+                    height: '30px',
+                    backgroundColor: 'yellow'
+                };
+                this.greenShade = {
+                    height: '30px',
+                    backgroundColor: 'seagreen'
+                };
             } else if (this.state == 2) {
-                this.redShade = { height: '30px', backgroundColor: 'red' };
-                this.yellowShade = { height: '30px', backgroundColor: 'khaki' };
-                this.greenShade = { height: '30px', backgroundColor: 'seagreen' };
+                this.redShade = {
+                    height: '30px',
+                    backgroundColor: 'red'
+                };
+                this.yellowShade = {
+                    height: '30px',
+                    backgroundColor: 'khaki'
+                };
+                this.greenShade = {
+                    height: '30px',
+                    backgroundColor: 'seagreen'
+                };
             }
         }
     },

@@ -10,12 +10,15 @@ const options = {
             ]
         };
     },
-    template: `    <div>
-                        <table>
-                            <tr><th>Name</th><th>Phone number</th></tr>
-                            <tr v-for="item in items"><td>{{item.name}}</td><td>{{item.phone}}</td></tr>
-                        </table>
-                    </div>`
+    template: `
+    <div>
+        <table>
+            <tr><th>Name</th><th>Phone number</th></tr>
+            <tr v-for="item in items">
+                <td>{{item.name}}</td><td>{{item.phone}}</td>
+            </tr>
+        </table>
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

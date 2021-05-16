@@ -12,7 +12,10 @@ const options = {
             this.styleInput = "";
         }
     },
-    template: `<div><input v-bind:style="styleInput" v-on:keydown="keyDown" v-on:keyup="keyUp"></div>`
+    template: `
+    <div>
+        <input v-bind:style="styleInput" v-on:keydown="keyDown" v-on:keyup="keyUp">
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

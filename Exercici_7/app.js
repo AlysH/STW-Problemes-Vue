@@ -19,7 +19,11 @@ const options = {
             this.d = this.c;
         }
     },
-    template: `<div><input type="checkbox" id="check" v-model="a"><label for="check">{{ a }} {{ b }} {{ c }} {{ d }}</label></div>`
+    template: `
+    <div>
+        <input type="checkbox" id="check" v-model="a">
+        <label for="check">{{ a }} {{ b }} {{ c }} {{ d }}</label>
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

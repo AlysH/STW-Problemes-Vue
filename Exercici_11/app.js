@@ -1,5 +1,6 @@
 const options = {
-    template: `<words-to-list words="Lorem ipsum dolor sit amet"></words-to-list>`
+    template: `
+    <words-to-list words="Lorem ipsum dolor sit amet"></words-to-list>`
 };
 
 const wordsToList = {
@@ -22,5 +23,3 @@ const wordsToList = {
 const app = Vue.createApp(options);
 app.component('words-to-list', wordsToList);
 const vm = app.mount("#app");
-
-

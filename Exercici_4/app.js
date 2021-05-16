@@ -11,7 +11,10 @@ const options = {
             }
         }
     },
-    template: `<div><input v-model="characters" v-on:input="countCharacters"></div>`
+    template: `
+    <div>
+        <input v-model="characters" v-on:input="countCharacters">
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

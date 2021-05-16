@@ -9,7 +9,10 @@ const options = {
             this.shown = false;
         }
     },
-    template: `<div><button v-if="shown" @click="hide">Click me!</button></div>`
+    template: `
+    <div>
+        <button v-if="shown" @click="hide">Click me!</button>
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

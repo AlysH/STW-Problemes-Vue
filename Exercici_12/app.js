@@ -3,7 +3,9 @@ const options = {
         return {
             person: {
                 name: 'My Name',
-                picture: `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM82Mz1HwAFqgJP3gasfwAAAABJRU5ErkJggg==`,
+                picture: 'data:image/png;base64,iVBORw0KGgoAAAAN'
+                + 'SUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mM82'
+                + 'Mz1HwAFqgJP3gasfwAAAABJRU5ErkJggg==',
                 email: 'me@somerandomdomain.com',
                 phone: '+00 00 000 0000'
             }
@@ -34,5 +36,3 @@ const card = {
 const app = Vue.createApp(options);
 app.component('card', card);
 const vm = app.mount("#app");
-
-

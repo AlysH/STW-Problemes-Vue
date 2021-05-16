@@ -15,12 +15,19 @@ const options = {
             this.items.splice(id, 1);
         }
     },
-    template: `    <div>
-                        <table>
-                            <tr><th>Name</th><th>Phone number</th><th></th></tr>
-                            <tr v-for="(item, index) in items"><td>{{item.name}}</td><td>{{item.phone}}</td><td><button @click="deleteEntry(index)">Delete</button></td></tr>
-                        </table>
-                    </div>`
+    template: `
+    <div>
+        <table>
+            <tr><th>Name</th><th>Phone number</th><th></th></tr>
+            <tr v-for="(item, index) in items"><
+                td>{{item.name}}</td>
+                <td>{{item.phone}}</td>
+                <td>
+                    <button @click="deleteEntry(index)">Delete</button>
+                </td>
+            </tr>
+        </table>
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

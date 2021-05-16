@@ -29,11 +29,12 @@ const options = {
             }
         }
     },
-    template: `    <div>
-                        <div v-bind:style="{ color: activeColor }">AM I RED?</div>
-                        <input type="range" min="0" max="100" v-model="inputVal">
-                        <div v-if="shown">YES!</div>
-                    </div>`
+    template: `
+    <div>
+        <div v-bind:style="{ color: activeColor }">AM I RED?</div>
+            <input type="range" min="0" max="100" v-model="inputVal">
+        <div v-if="shown">YES!</div>
+    </div>`
 };
 
 const vm = Vue.createApp(options).mount('#app');

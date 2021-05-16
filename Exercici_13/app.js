@@ -6,7 +6,8 @@ const options = {
     },
     template: `
     <div>
-        <switch-button v-on:on="state='just turned on'" v-on:off="state='just turned off'"></switch-button>
+        <switch-button v-on:on="state='just turned on'"
+        v-on:off="state='just turned off'"></switch-button>
         {{ state }}
     </div>`
 };
@@ -38,8 +39,10 @@ const switchButton = {
     },
     template: `
     <div style="border:solid; display: inline-block">
-        <button v-bind:disabled="disabledOn" @click="switchButtons">ON</button>
-        <button v-bind:disabled="disabledOff" @click="switchButtons">OFF</button>
+        <button v-bind:disabled="disabledOn" @click="switchButtons">
+        ON</button>
+        <button v-bind:disabled="disabledOff" @click="switchButtons">
+        OFF</button>
     </div>
     `
 };
